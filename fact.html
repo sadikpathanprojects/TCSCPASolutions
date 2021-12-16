@@ -57,59 +57,59 @@
         
         <h5>TCS xplore java hands on | Java iterations hands on 2 | factorial of 5 user entered numbers </h5> 
         <xmp>        
-            Write the program to read the 5 numbers and find the
-            factorial of each.
-            
-            input:
-            2
-            3
-            4
-            5
-            6
-            
-            output:
-            2
-            6
-            24
-            120
-            720.
+    Write the program to read the 5 numbers and find the
+    factorial of each.
+
+    input:
+    2
+    3
+    4
+    5
+    6
+
+    output:
+    2
+    6
+    24
+    120
+    720.
 
         </xmp>
         
         <h4>Code to the above Question is given below.</h4>
         <xmp>
-            import java.util.Scanner;
+import java.util.Scanner;
 
-            public class factorial {
-                public static void main(String[] args) {
-                 Scanner sc=new Scanner(System.in);
-                 int arr[]=new int[5];
-                 int arrforfact[]=new int[5];
-            
-                    for (int i = 0; i < 5; i++) {
-                        int num=sc.nextInt();
-                        arr[i]=num;
-                    }
-            
-                    for (int i = 0; i < 5; i++) {
-                        int numm=arr[i];
-                        int temp=1;
-                        for (int j = 1; j <=numm ; j++) {
-            
-                            temp=temp*j;
-            
-                        }
-                        arrforfact[i]=temp;
-            
-            
-                    }
-                    for (int i = 0; i < 5; i++) {
-                        System.out.println(arrforfact[i]);
-                    }
-            
-                }
-            
-            }    
+public class factorial {
+    public static void main(String[] args) {
+     Scanner sc=new Scanner(System.in);
+     int arr[]=new int[5];
+     int arrforfact[]=new int[5];
+
+        for (int i = 0; i < 5; i++) {
+            int num=sc.nextInt();
+            arr[i]=num;
+        }
+
+        for (int i = 0; i < 5; i++) {
+            int numm=arr[i];
+            int temp=1;
+            for (int j = 1; j <=numm ; j++) {
+
+                temp=temp*j;
+
+            }
+            arrforfact[i]=temp;
+
+
+        }
+        for (int i = 0; i < 5; i++) {
+            System.out.println(arrforfact[i]);
+        }
+
+    }
+
+}    
         </xmp>
     </section>
 </body>
