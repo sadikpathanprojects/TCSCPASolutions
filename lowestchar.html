@@ -71,25 +71,25 @@ As H is having the lowest ascii value.
         
         <h4>Code to the above Question is given below.</h4>
         <xmp>
-            import java.util.Scanner;
+import java.util.Scanner;
 
-            public class solution {
-            
-                public static void main(String[] args) {
-                    Scanner sc=new Scanner(System.in);
-            
-                   String  a=sc.nextLine();
-                   int temp=(int)a.charAt(0);
-            
-                    for (int i = 1; i <a.length() ; i++) {
-                          if((int)a.charAt(i)<temp)
-                          {
-                              temp=(int)a.charAt(i);
-                          }
-                  }
-                    System.out.println((char)temp);
-                }
-            }
+public class solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+       String  a=sc.nextLine();
+       int temp=(int)a.charAt(0);
+
+        for (int i = 1; i <a.length() ; i++) {
+              if((int)a.charAt(i)<temp)
+              {
+                  temp=(int)a.charAt(i);
+              }
+      }
+        System.out.println((char)temp);
+    }
+}
                    
         </xmp>
     </section>
