@@ -63,61 +63,61 @@
         
         <h4>Code to the above Question is given below.</h4>
         <xmp>
-            package youtube;
-            import java.util.Scanner;
-            public class distance {
-            
-                public static void main(String[] args) {
-            
-                Scanner sc=new Scanner(System.in);
-            
-                int x1=sc.nextInt();
-                int y1=sc.nextInt();
-                int x2=sc.nextInt();
-                int y2=sc.nextInt();
-            
-                Point p1=new Point(x1,y1);
-                Point p2=new Point(x2,y2);
-            
-                Double  distance =findDistance(p1,p2);
-            
-                System.out.format("%.4f",distance);
-             
-             }
-            
-            
-            public  static  double findDistance(Point p1,Point p2){
-            
-                    int x1=p1.x;
-                    int y1=p1.y;
-            
-                    int x2=p2.x;
-                    int y2=p2.y;
-            
-            
-                   Double result =Math.sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)));
-            
-            
-            
-                    return result;
-            }
-            
-            
-            }
-            
-            class Point{
-                int x;
-                int y;
-            
-            
-                //constructor
-            
-            
-                public Point(int x, int y) {
-                    this.x = x;
-                    this.y = y;
-                }
-            }
+package youtube;
+import java.util.Scanner;
+public class distance {
+
+    public static void main(String[] args) {
+
+    Scanner sc=new Scanner(System.in);
+
+    int x1=sc.nextInt();
+    int y1=sc.nextInt();
+    int x2=sc.nextInt();
+    int y2=sc.nextInt();
+
+    Point p1=new Point(x1,y1);
+    Point p2=new Point(x2,y2);
+
+    Double  distance =findDistance(p1,p2);
+
+    System.out.format("%.4f",distance);
+
+ }
+
+
+public  static  double findDistance(Point p1,Point p2){
+
+        int x1=p1.x;
+        int y1=p1.y;
+
+        int x2=p2.x;
+        int y2=p2.y;
+
+
+       Double result =Math.sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)));
+
+
+
+        return result;
+}
+
+
+}
+
+class Point{
+    int x;
+    int y;
+
+
+    //constructor
+
+
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+}
             
             
         </xmp>
